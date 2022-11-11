@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1061</width>
+    <height>774</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="inTime">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>70</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CalculationButton">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>440</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="text">
+     <string>Расчет Вязкости</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>70</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Время</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inDensityOil">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>120</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>120</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Плотность Нефти</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inDensityBall">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>170</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>170</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Плотность Шара</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="resViskosity">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>390</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>390</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Вязкость</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CalculationKButton">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>690</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="text">
+     <string>Расчет К</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inViscosityOilStandart">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>640</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>640</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Вязкость  Нефти</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>640</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Результат K</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="resK">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>640</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>290</y>
+      <width>1001</width>
+      <height>291</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>590</y>
+      <width>1001</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>600</y>
+      <width>301</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Определение коэффициента</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>1001</width>
+      <height>271</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>300</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Расчет вязкости</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>20</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Параметры</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_15">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>340</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="text">
+     <string>15 Радусов</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inK30">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>120</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inK45">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>170</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inK15">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>70</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>120</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Угол 30 град. Коэф. К</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>170</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Угол 45 град. Коэф. К</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>220</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Угол 60 град. Коэф. К</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>70</y>
+      <width>191</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Угол 15 град. Коэф. К</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="inK60">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>220</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_30">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>340</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="text">
+     <string>30 Радусов</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_45">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>340</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="text">
+     <string>45 Радусов</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="radioButton_60">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>340</y>
+      <width>141</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="text">
+     <string>60 Радусов</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>530</y>
+      <width>161</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Средняя Вязкость</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="resMeanViskosity">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>530</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="Count">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>530</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Normal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>530</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Количество измерений</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="ResetButton">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>530</y>
+      <width>201</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="text">
+     <string>Сброс</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CreateExcel">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>440</y>
+      <width>201</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: #ffffff;
+border-style: solid; 
+border-width: 1px;
+border-color: #6DA8E0;
+border-radius :15px;
+
+font:  &quot;Times New Roman&quot; ;
+color: rgb(0, 0, 0);
+font-size: 20px;</string>
+    </property>
+    <property name="text">
+     <string>Excel</string>
+    </property>
+   </widget>
+   <zorder>line_3</zorder>
+   <zorder>line_2</zorder>
+   <zorder>line</zorder>
+   <zorder>inTime</zorder>
+   <zorder>CalculationButton</zorder>
+   <zorder>label</zorder>
+   <zorder>inDensityOil</zorder>
+   <zorder>label_2</zorder>
+   <zorder>inDensityBall</zorder>
+   <zorder>label_7</zorder>
+   <zorder>resViskosity</zorder>
+   <zorder>label_8</zorder>
+   <zorder>CalculationKButton</zorder>
+   <zorder>inViscosityOilStandart</zorder>
+   <zorder>label_9</zorder>
+   <zorder>label_10</zorder>
+   <zorder>resK</zorder>
+   <zorder>label_14</zorder>
+   <zorder>label_15</zorder>
+   <zorder>label_16</zorder>
+   <zorder>radioButton_15</zorder>
+   <zorder>inK30</zorder>
+   <zorder>inK45</zorder>
+   <zorder>inK15</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>label_6</zorder>
+   <zorder>label_3</zorder>
+   <zorder>inK60</zorder>
+   <zorder>radioButton_30</zorder>
+   <zorder>radioButton_45</zorder>
+   <zorder>radioButton_60</zorder>
+   <zorder>label_11</zorder>
+   <zorder>resMeanViskosity</zorder>
+   <zorder>Count</zorder>
+   <zorder>label_12</zorder>
+   <zorder>ResetButton</zorder>
+   <zorder>CreateExcel</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
